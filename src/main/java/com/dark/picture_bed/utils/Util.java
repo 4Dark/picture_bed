@@ -5,6 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.UUID;
 
 public class Util {
     private final static String[] fileType = {"jpg", "jpeg", "gif", "png"};
@@ -28,5 +29,13 @@ public class Util {
             }
         }
         return "illegal";
+    }
+
+    /**
+     * 32位 使用空格 代替-
+     * @return
+     */
+    public static String getUUID(){
+        return UUID.randomUUID().toString().replace("-","");
     }
 }

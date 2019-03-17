@@ -17,13 +17,13 @@ public class WebAppConfig extends WebMvcConfigurationSupport {
      * spring.servlet.multipart.maxFileSize=10Mb
      * spring.servlet.multipart.maxRequestSize=10Mb
      */
-    @Bean
-    public MultipartConfigElement multipartConfigElement(){
-        MultipartConfigFactory multipartConfigFactory = new MultipartConfigFactory();
-//     上传文件大小
-        multipartConfigFactory.setMaxFileSize("1024KB");
-//        设置上传数据总大小
-        multipartConfigFactory.setMaxRequestSize("102400KB");
-        return multipartConfigFactory.createMultipartConfig();
-    }
+//    @Bean
+//    public MultipartConfigElement multipartConfigElement(){
+//        MultipartConfigFactory multipartConfigFactory = new MultipartConfigFactory();
+////     上传文件大小
+//        multipartConfigFactory.setMaxFileSize("1024KB");
+////        设置上传数据总大小
+//        multipartConfigFactory.setMaxRequestSize("102400KB");
+//        return multipartConfigFactory.createMultipartConfig();
+//    }
 }

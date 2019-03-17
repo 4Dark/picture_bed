@@ -6,9 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@SpringBootApplication里面就包含了@ComponentScan
 @SpringBootApplication
 public class PictureBedApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(PictureBedApplication.class, args);
 	}
-
 }
